@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <script type="text/javascript" src="./scripts.js" defer></script>
+  <title>Formulário de Cadastro com DataTable</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Cadastro</h1>
+    <form action="" class="form">
+
+      <div class="containerForm">
+        <div class="fields">
+          <input type="number" name="txtCode" hidden>
+        </div>
+
+        <div class="fields">
+          <label for="name">Nome</label>
+          <input type="text" id="name" name="txtName" placeholder="Digite seu nome">
+        </div>
+
+        <div class="fields">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="txtEmail" placeholder="Digite seu e-mail">
+        </div>
+
+        <div class="fields">
+          <label for="profession">Profissão</label>
+          <input type="text" id="profession" name="txtProfession" placeholder="Digite sua profissão">
+        </div>
+
+        <div class="buttonForm">
+          <input class="button" type="button" value="Adicionar" onclick="addPeople(txtName.value, txtEmail.value, txtProfession.value)" />
+        </div>
+      </div>
+    </form>
+
+    <section class="dataTable">
+      <div class="containerTable">
+        <table>
+          <thead>
+            <tr>
+              <th>Código</th>
+              <th>Nome</th>
+              <th>E-mail</th>
+              <th>Profissão</th>
+            </tr>
+          </thead>
+
+          <tbody id="dtPeople">
+            <tr>
+              
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
